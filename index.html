@@ -28,11 +28,12 @@
 <body class="font-manrope">
 
 <main class=" ">
-  <header class="items-center min-h-screen justify-center px-20 lg:pl-24  bg-lime-100"> 
 
-    <nav class="max-w-screen-xl mx-auto flex justify-between items-center py-6 lg:pr-16">
+  <header class="items-center min-h-screen justify-center px-6 lg:px-20 md:px-12 lg:pl-24  bg-lime-100"> 
 
-      <a href="#home" class="text-2xl font-bold"><i class="fa-solid fa-mug-hot mr-4 text-4xl text-orange-500"></i>Tea House</a>
+    <nav class="max-w-screen-xl mx-auto lg:flex md:flex invisible lg:visible md:visible justify-between items-center py-6 lg:pr-16">
+
+      <a href="#home" class="text-2xl font-bold group"><i class="fa-solid fa-mug-hot mr-4 text-4xl text-orange-500 transition duration-300 group-hover:text-lime-600 ease-out"></i>Tea House</a>
 
       <ul class="flex gap-12 font-semibold">
         <li><a class="transition duration-300 ease-out hover:text-orange-500" href="#home">Home</a></li>
@@ -44,26 +45,30 @@
     </nav>
 
 
-    <section class="flex my-20 justify-between items-center gap-8">
+    <section class=" lg:flex lg:text-left  my-20 justify-between items-center gap-8 md:text-center sm:text-center">
 
-      <div class="banner-content flex flex-col items-start justify-center gap-4 w-3/6 ">
-        <h1 class="text-7xl font-bold leading-tight ">It's good <br> tea time at The <br> Tea House</h1>
+      <div class="banner-content lg:flex lg:flex-col lg:items-start items-center justify-center gap-4 lg:w-3/6">
+        <h1 class="lg:text-7xl md:text-6xl text-6xl font-bold leading-tight ">It's good <br> tea time at The <br> Tea House</h1>
         <p class="">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
-        <button class="px-8 py-4 bg-gradient-to-r from-orange-500 to to-red-500 text-white font-bold rounded-lg " >Explore More <i class="fa-solid fa-arrow-right pl-2 -rotate-45 text-2xl"></i> </button>
+        <button class="px-4 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-lg cursor-pointer text-xl group"> 
+          <span class="transition-transform duration-500 ease-in-out group-hover:scale-105">Explore More </span> 
+            <i class="fa-solid fa-arrow-right pl-2 -rotate-45 text-1xl"></i> 
+        </button>
+        
       </div>
 
       <div class="image-content relative ">
         <img src="images/banner.png" alt="" class="w-full">
 
-        <div class="rating-card flex items-center gap-4 bg-white shadow-lg rounded-lg px-8 py-6 absolute bottom-6 left-16">
+        <div class="rating-card flex items-center gap-4 bg-white shadow-lg rounded-lg px-6 py-4 absolute bottom-6 left-16">
 
           <div class="">
-            <i class="fa-solid fa-star text-2xl text-amber-500 abs"></i>
+            <i class="fa-solid fa-star text-4xl text-amber-500 abs"></i>
           </div>
 
           <div class="">
-            <h1>5.00</h1>
-            <h3>Trust Pilot Ratings</h3>
+            <h1 class="text-3xl font-bold">5.00</h1>
+            <h5 class="text-gray-500">Trust Pilot Ratings</h5>
           </div>
           
         </div>
@@ -72,6 +77,91 @@
     </section>
 
   </header>
+
+  <!-- part-02 -->
+
+
+  <section class="px-20 py-20 lg:pl-24"> 
+
+    <div class="items-center justify-center text-center ">
+      <h1 class="text-4xl font-bold pb-4"> Our Featured Products </h1>
+      <p class="text-gray-500 max-w-2xl mx-auto pb-12">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don't look even slightly believable. </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center"> 
+
+      <!-- product-cart-1 -->
+      <div class="rounded-lg bg-gradient-to-b from-gray-100 to-gray-50 p-6">
+        <img class="mx-auto pb-4" src="images/tea-1.png" alt="">
+        <h1 class="text-xl font-bold pb-2">Milk Tea</h1>
+        <p class=" text-sm text-gray-500">Creamer could be replaced by fresh milk</p>
+      </div>
+
+      <!-- product-cart-2 -->
+      <div class="rounded-lg bg-gradient-to-b from-gray-100 to-gray-50 p-6">
+        <img class="mx-auto pb-4" src="images/tea-2.png" alt="">
+        <h1 class="text-xl font-bold pb-2">Black Tea</h1>
+        <p class=" text-sm text-gray-500">Creamer could be replaced by fresh milk</p>
+      </div>
+
+      <!-- product-cart-3 -->
+      <div class="rounded-lg bg-gradient-to-b from-gray-100 to-gray-50 p-6">
+        <img class="mx-auto pb-4" src="images/tea-3.png" alt="">
+        <h1 class="text-xl font-bold pb-2">Lemon Tea</h1>
+        <p class=" text-sm text-gray-500">Creamer could be replaced by fresh milk</p>
+      </div>
+
+      <!-- product-cart-4 -->
+      <div class="rounded-lg bg-gradient-to-b from-gray-100 to-gray-50 p-6">
+        <img class="mx-auto pb-4" src="images/tea-4.png" alt="">
+        <h1 class="text-xl font-bold pb-2">cold Tea</h1>
+        <p class=" text-sm text-gray-500">Creamer could be replaced by fresh milk</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- part-03 -->
+
+  <section class="px-20 py-20 lg:pl-24">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 ">
+
+      <!-- image-content -->
+      <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-11/12">
+
+        <div class="bg-gradient-to-r from-orange-100 to-slate-100 rounded-lg"></div>
+
+        <div class="p-12 bg-yellow-50 rounded-lg row-span-3">
+          <img src="images/fresh-1.png" alt="">
+        </div>
+
+        <div class="p-12 bg-green-50 rounded-lg row-span-3">
+          <img src="images/fresh-2.png" alt="">
+        </div>
+
+        <div class="bg-gradient-to-r from-slate-400 to-slate-50 rounded-lg">
+        </div>
+
+      </div>
+      
+      <!-- text-content -->
+      <div>
+        <h1 class="text-4xl font-bold pb-4">Great Tea, Freshly Presented</h1>
+        <p class="text-gray-500 pb-4">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+        <h3 class="text-xl pb-4 font-bold">Unique Taste</h3>
+        <p class="text-gray-500 pb-4">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+        <h3 class="text-xl pb-4 font-bold">Premium Quality</h3>
+        <p class="text-gray-500 pb-4">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
 </main>
   
 <footer>
